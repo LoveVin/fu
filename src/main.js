@@ -52,4 +52,3 @@ $('.card-body').on('mouseenter',function(){
 $('.card-body').on('mouseleave',function(){
     $(this).find('.project-link').animate({height:"0"},500);
 })
-

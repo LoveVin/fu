@@ -18,6 +18,9 @@ body{
     position: relative;
     overflow-x:hidden;
 }
+strong{
+    color: #e8676b;
+}
 header{
     
 }
@@ -79,7 +82,6 @@ header .navbar-nav a::after{
     content: '';
     display: block;
     position: absolute;
-    /*width: calc(100% - 1rem);*/
     height: 4px;
     background: #e8676b;
     border-radius: 4px;
@@ -117,17 +119,14 @@ main .container{
 #about .section-box{
     margin-left: auto;
     margin-right: auto;
-    /*height: 550px;*/
     background: #e8676b;
 }
 #about .section-introduce{
+    margin: 10px 0;
 }
 #about .section-introduce .cv-download{
     margin-top: 30px;
     text-align: center;
-}
-#about .section-introduce .my-introduce{
-    margin-top: 30px;
 }
 #about .section-introduce .cv-download a{
     width: 300px;
@@ -239,9 +238,14 @@ main .container{
 }
 #skills .section-box-info .container .row .row-div{
     background: white;
-    padding: 50px 10px;
+    padding: 20px;
     margin-bottom: 20px;
     margin-right: 30px;
+}
+#skills .section-box-info .container .row .row-div h6{
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-weight: bold;
 }
 #projects-list .row{
     margin-left: -5px;
@@ -250,13 +254,6 @@ main .container{
 #projects-list .row > div{
    padding-left: 5px;
    padding-right: 5px;
-}
-#projects-list .row .project-description{
-    /*position: fixed;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;*/
 }
 #projects-list .row .card{
     margin-bottom: 10px;
@@ -273,7 +270,7 @@ main .container{
     bottom: 0;
 }
 #projects-list .project-info .project-keys{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #projects-list .project-info h4,p{
    margin: 0;
@@ -304,7 +301,14 @@ main .container{
     width: 20px;
     height: 20px;
 }
-.card-body img{
+#projects-list .modal-header{
+    padding: 0;
+}
+#projects-list .modal-body p{
+    margin: 4px;
+}
+#projects-list .modal-footer{
+    padding: 16px;
 }
 
 /*mobile*/
